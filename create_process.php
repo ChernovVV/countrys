@@ -2,20 +2,20 @@
 
 require_once 'connect.php';
 
-$Country = $_POST['Country']; //принимает переменные с формы
-$Capital = $_POST['Capital'];
-$Population = $_POST['Population'];
-$Volume = $_POST['Volume'];
+$Country_create = $_POST['Country_create']; //принимает переменные с формы
+$Capital_create = $_POST['Capital_create'];
+$Population_create = $_POST['Population_create'];
+$Volume_create = $_POST['Volume_create'];
 
-$Country = htmlspecialchars($Country); //экранируем html теги
-$Capital = htmlspecialchars($Capital);
-$Population = htmlspecialchars($Population);
-$Volume = htmlspecialchars($Volume);
+$Country_create = htmlspecialchars($Country_create); //экранируем html теги
+$Capital_create = htmlspecialchars($Capital_create);
+$Population_create = htmlspecialchars($Population_create);
+$Volume_create = htmlspecialchars($Volume_create);
 
 try {
 
 	$sql = $pdo->prepare ("INSERT INTO Country SET Country=:country, Capital=:capital, Population=:population, Volume=:volume"); //подготавливаем запрос
-	$params = ['country' => $Country, 'capital' => $Capital, 'population' => $Population, 'volume' => $Volume]; //подставляем переменные в маску
+	$params = ['country' => $Country_create, 'capital' => $Capital_create, 'population' => $Population_create, 'volume' => $Volume_create]; //подставляем переменные в маску
 	$sql->execute($params); //соеденяем переменные с маской
 
 } catch (PDOException $e) { //отслеживание ошибок кода вставки данных в БД
