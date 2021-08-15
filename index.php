@@ -42,19 +42,19 @@ require_once 'pluggabledata.php';
 				<form action="create_process.php" method="post">
 					<div class="mb-3">
 						<label class="form-label">Страна</label>
-						<input type="text" class="form-control" name="Country" id="roll-input" required>
+						<input type="text" class="form-control" name="Country_create" required>
 					</div>
 					<div class="mb-3">
 						<label class="form-label">Столица</label>
-						<input type="text" class="form-control" name="Capital" id="roll-input" required>
+						<input type="text" class="form-control" name="Capital_create" required>
 					</div>
 					<div class="mb-3">
 						<label class="form-label">Население</label>
-						<input type="number" class="form-control" name="Population" id="roll-input" required>
+						<input type="number" class="form-control" name="Population_create" required>
 					</div>
 					<div class="mb-3">
 						<label class="form-label">Площать страны</label>
-						<input type="number" class="form-control" name="Volume" id="roll-input" required>
+						<input type="number" class="form-control" name="Volume_create" required>
 					</div>
 						<button type="submit" class="kastom-btn" onclick="press_create()">Добавить новую страну</button>
 					</div>
