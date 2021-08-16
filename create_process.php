@@ -14,13 +14,13 @@ $Volume = htmlspecialchars($Volume);
 
 try {
 
-    $sql = $pdo->prepare ("INSERT INTO Country SET Country=:country, Capital=:capital, Population=:population, Volume=:volume"); //подготавливаем запрос
-    $params = ['country' => $Country, 'capital' => $Capital, 'population' => $Population, 'volume' => $Volume]; //подставляем переменные в маску
-    $sql->execute($params); //соеденяем переменные с маской
-    
+	$sql = $pdo->prepare ("INSERT INTO Country SET Country=:country, Capital=:capital, Population=:population, Volume=:volume"); //подготавливаем запрос
+	$params = ['country' => $Country, 'capital' => $Capital, 'population' => $Population, 'volume' => $Volume]; //подставляем переменные в маску
+	$sql->execute($params); //соеденяем переменные с маской
+
 } catch (PDOException $e) { //отслеживание ошибок кода вставки данных в БД
 
-    die($e->getMessage()); //вывод сообщения ошибки
+	die($e->getMessage()); //вывод сообщения ошибки
 }
 
 header('location: / ');
