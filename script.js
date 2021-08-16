@@ -1,7 +1,7 @@
 function press_create() {
-alert('Данные добавлены в базу');
+alert('Данные переданы в базу');
 }
 
 function press_update() {
-alert('Данные изменены в базе');
+alert('Данные переданы в базу');
 }
