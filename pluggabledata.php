@@ -32,5 +32,4 @@ try {
 }
 $coutrys_function_update = coutrys_for_update ($id_for_update, $pdo);
 /* конец получения данных на форму в update*/
-
 ?>
