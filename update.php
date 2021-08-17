@@ -3,7 +3,7 @@
 require_once 'connect.php';
 require_once 'pluggabledata.php';
 require_once 'htmlsample.php';
-
+$coutrys_function_update = coutrys_for_update ($id_for_update, $pdo);
 ?>
 
 <!doctype html>
