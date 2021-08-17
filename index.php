@@ -25,7 +25,7 @@ require_once 'htmlsample.php';
 						</tr>
 					</thead>
 						<?php
-						while ($coutry_from_db = $coutrys_from_db->fetch(PDO::FETCH_ASSOC)) //сортируем данные
+						while ($coutry_from_db = $coutrys_function_from->fetch(PDO::FETCH_ASSOC)) //сортируем данные
 						{?>
 					<tbody>
 						<tr>
