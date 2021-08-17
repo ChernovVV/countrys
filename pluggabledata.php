@@ -7,7 +7,7 @@ $coutrys_from_db = $pdo->prepare("SELECT * FROM `Country`"); //берем все
 $coutrys_from_db->execute();
 return $coutrys_from_db;
 }
-$coutrys_function_from = coutrys_from_db ($pdo);
+
 /* конец вывода данных из таблицы */
 
 /* начало получения данных на форму в update*/
@@ -30,6 +30,7 @@ try {
 } else { }
 
 }
-$coutrys_function_update = coutrys_for_update ($id_for_update, $pdo);
+
 /* конец получения данных на форму в update*/
+
 ?>
